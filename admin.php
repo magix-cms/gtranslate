@@ -53,9 +53,8 @@ class plugins_gtranslate_admin extends plugins_gtranslate_db
     /**
      * Constructor
      */
-    public function __construct()
-    {
-        $this->template = new backend_model_template();
+    public function __construct($t = null){
+        $this->template = $t ? $t : new backend_model_template;
         $this->plugins = new backend_controller_plugins();
         $this->message = new component_core_message($this->template);
         $this->modelLanguage = new backend_model_language($this->template);
@@ -220,7 +219,7 @@ class plugins_gtranslate_admin extends plugins_gtranslate_db
                 CURLOPT_URL             => $data['url'],
                 CURLOPT_HTTPHEADER      => $headers,
                 CURLOPT_CONNECTTIMEOUT  => 300,
-                CURLOPT_TIMEOUT => 300,
+                CURLOPT_TIMEOUT => 30,
                 //CURLOPT_ENCODING => "",
                 CURLOPT_MAXREDIRS => 10,
                 CURLOPT_CUSTOMREQUEST   => "POST",

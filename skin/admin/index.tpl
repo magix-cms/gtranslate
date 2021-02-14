@@ -1,8 +1,8 @@
 {extends file="layout.tpl"}
-{block name='head:title'}Google Translate{/block}
+{block name='head:title'}Google Translate Rapid API{/block}
 {block name='body:id'}gtranslate{/block}
 {block name='article:header'}
-    <h1 class="h2">Google Translate</h1>
+    <h1 class="h2">Google Translate Rapid API</h1>
 {/block}
 {block name='article:content'}
     {if {employee_access type="view" class_name=$cClass} eq 1}
@@ -12,7 +12,7 @@
                     {$debug}
                 {/if}
                 <header class="panel-header">
-                    <h2 class="panel-heading h5">Gestion Api Google Translate</h2>
+                    <h2 class="panel-heading h5">Gestion Api Google Translate Rapid API</h2>
                 </header>
                 <div class="panel-body panel-body-form">
                     <div class="mc-message-container clearfix">
