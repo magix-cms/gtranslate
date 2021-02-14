@@ -1,5 +1,5 @@
 # Google Translate
-Plugin Google Translate for [magixcms 3](https://www.magix-cms.com)
+Plugin Google translate with Rapid API (Translate V2) for [magixcms 3](https://www.magix-cms.com)
 
 ![1017853ad6caff0e4486825248299cad](https://user-images.githubusercontent.com/356674/106892769-d5c98180-66ec-11eb-975a-8665a0271fda.png)
 
